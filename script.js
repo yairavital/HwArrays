@@ -66,10 +66,12 @@ lengthOfArray([]);
 function strPrint(arr) {
   let str = arr.toString();
   if (str.length == 0) console.log("why you make this?");
-  console.log(str);
+  let str1 = str.split(",");
+  console.log(str1);
+  let str2 = str1.filter((x) => x != "");
+  console.log(str2.toString());
 }
-strPrint([[[[[[["df"]]]]]]]);
-strPrint([]);
+strPrint([[], [[[[[["god,dgd"]]]]]], []]);
 //Ex8
 function zero(arr) {
   let count = 0;
